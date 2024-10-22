@@ -12,8 +12,8 @@ margin: 0px auto;
     height: 100px;
 }
 #content{
-    background-color: aquamarine;
-    height: 500px;
+    background-color: rgb(197, 238, 224);
+    height: 1000px;
 }
 a:link, a:visited{
     color: rgb(23, 23, 23);
