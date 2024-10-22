@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pennsylvania Attractions</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body{
+        background-color: #16425B;
+    }
+    #container{
+        width: 1440px;
+        margin:0px auto;
+        background-color: #DBE9EE;
+    }
+
+    #topbar{
+        width: 1440px;
+        background-color: #16425B;
+        height: 100px;
+        color: white; 
+        text-align: center;
+    }
+
+    #topheader{
+        width: 1440px;
+        background-image: url('images/blurpic.jpg');
+        background-size: cover;
+        height: 400px;
+        border: 8px solid #C0D6DF;
+    }
+
+    h1{
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 110px;
+        color: white;
+        padding: 65px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        animation: fadeIn 1.5s forwards;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    .highlights{
+        width: 1440px;
+        display: flex;
+    }
+
+    .col1{
+        width:720px ;
+        height: 560px;
+        background-color:white;
+    }
+
+    .col2{
+        width:720px ;
+        height: 560px;
+        background-color:rgb(255, 255, 255);
+    }
+
+    #parksinpa{
+        width: 1440px;
+        height: 300px;
+        background-color: #F1FAFF;
+    
+    }
+
+    #local{
+        width: 1440px;
+        display: flex;
+    }
+
+    .cola{
+        width:480px ;
+        height: 400px;
+        background-color: #F1FAFF;
+    }
+
+    .colb{
+        width:480px ;
+        height: 400px;
+        background-color: #F1FAFF;
+    }
+
+    .colc{
+        width:480px ;
+        height: 400px;
+        background-color: #F1FAFF;
+    }
+
+    #capitol{
+        width: 1440px;
+        display: flex;
+    }
+
+    .capimage{
+        width:720px ;
+        height: 560px;
+        background-color:rgb(255, 255, 255);
+    }
+
+    .captext{
+        width:720px ;
+        height: 560px;
+        background-color:rgb(255, 255, 255);
+        padding-top: 60px;
+    }
+
+    #market{
+        width: 1440px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .marketimage{
+        width:720px ;
+        height: 560px;
+        background-color:rgb(255, 255, 255);
+    }
+
+    .markettext{
+        width:720px ;
+        height: 560px;
+        background-color:rgb(255, 255, 255);
+        padding-top: 60px;
+    }
+
+    #footer{
+        width: 1440px;
+        height: 30px;
+        background-color: #324B56;
+    }
+    h2 {
+        margin: 0px auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 60px;
+        color: #16425B;
+        padding: 60px;
+    }
+    p {
+        padding-bottom: 100px;
+        padding-left: 65px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 700px;
+        font-size: 25px;
+    }
+    h3 {
+        margin: 0px auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        color: #16425B;
+        padding-left: 60px;
+        padding-top: 120px;
+        font-weight: lighter;
+    }
+    .highlight {
+      color: #81C3D7; 
+    }
+    nav {
+      gap: 20px;
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-top: 38px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      margin-right: 50px;
+      transition: color 0.3s ease;
+      
+    }
+
+    nav a:hover {
+      color: #81C3D7;
+    }
+    .imagepadding {
+        padding: 60px;
+    }
+    button {
+        margin: 0px auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        padding: 60px;
+        padding-left: 150px ;
+    
+    }
+
+
+</style>
+
+</head>
+<body>
+
+    <div id="container">
+    <div id="topbar">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#parksinpa">Parks</a>
+            <a href="#events">Events</a>
+            <a href="#learn">Learn</a>
+          </nav>
+    </div>
+    <div id="topheader">
+
+
+        <h1>Journey Through <br><span class="highlight"> Pennsylvania</span></h1>
+        <br><p>Pennsylvania’s Must-Visit Destinations</p>
+    </div>
+
+
+
+
+    <div class="highlights">
+        <div class="col1"><h2>Raystown Lake</h2><p><br>A scenic reservoir near Huntingdon, offering boating, fishing, hiking, and camping amid picturesque landscapes and water activities. </p><br><button type="button">Vist Today</button></div>
+        <br>
+        
+        <div class="col2"><a href="https://www.nab.usace.army.mil/Missions/Dams-Recreation/Raystown/" target="_blank"><img src="images/raystown.png" style="width: 500px; height: auto;" class="imagepadding"></a></div>
+    </div>
+    <div class="highlights">
+        <div class="col1"><h2>Hershey Park</h2><br><p>A renowned amusement park featuring exciting rides, live entertainment, and an opportunity to learn about chocolate-making at Hershey's Chocolate World.</p>
+    </div>
+        <div class="col2"><a href="https://www.hersheypark.com" target="_blank"><img src="images/hersheypark.png" style="width: 500px; height: auto;" class="imagepadding"></a></div>
+    </div>
+
+
+
+
+
+    <div id="parksinpa"><h2>Parks In PA</h2></div>
+    <div id="local">
+        <div class="cola"><a href="https://www.centralmarketyork.com" target="_blank"><img src="images/gettyimage.png" style="width: 300px; height: auto;" class="imagepadding"></a><h3>Gettysburg <br>National <br>Military Park</h3> <br> <p>Site of the pivotal Battle of Gettysburg during the Civil War, offering guided tours, historic monuments, and a visitor center with exhibits.
+
+            </p></div>
+        <div class="colb"><h3>Pine Grove <br>Furnace State <br>Park</h3><br><p>Serving as the "Gateway to the Appalachian Trail," this park offers hiking, picnicking, and swimming opportunities, along with historic features and natural beauty.
+
+            </p></div>
+        <div class="colc"> <h3>The <br>Pennsylvania<br> Grand Canyon</h3><br><p>Also known as Pine Creek Gorge, this natural wonder features stunning vistas, hiking trails, and opportunities for outdoor recreation.
+
+            </p></div>
+
+
+
+
+    </div>
+    <div id="capitol">
+        <div class="capimage"><a href="http://www.pacapitol.com" target="_blank"><img src="images/statecapitol.png" style="width: 500px; height: auto;" class="imagepadding"></a></div>
+        <div class="captext"> <h2> State Capitol</h2> <br> <p style="text-align: center;">An impressive architectural gem in Harrisburg showcasing exquisite artwork, stunning interiors, and guided tours to learn about the state's government
+            and history
+        </p></div>
+    </div>
+    <div id="market">
+        <div class="marketimage"><a href="https://www.centralmarketyork.com" target="_blank"><img src="images/marketyork.png" style="width: 500px; height: auto;" class="imagepadding"></a></div>
+        <div class="markettext"><h2> Market York</h2> <br> <p style="text-align: center;">The oldest continuously operating farmers' market in the U.S., offering a bustling atmosphere, local produce, crafts, and diverse food vendors. </p></div>
+    </div>
+    <div id="footer"><p></p></div>
+    
+    </div>
+
+
+
+
+    <script>
+        function smoothScroll(target, duration) {
+          const targetElement = document.querySelector(target);
+          const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+          const startPosition = window.scrollY;
+          const distance = targetPosition - startPosition;
+          let startTime = null;
+    
+          function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const run = linearEase(timeElapsed, startPosition, distance, duration);
+            window.scrollTo(0, run);
+            if (timeElapsed < duration) requestAnimationFrame(animation);
+          }
+          function linearEase(t, b, c, d) {
+            return c * t / d + b;
+          }
+          requestAnimationFrame(animation);
+        }
+        document.querySelectorAll('nav a').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = this.getAttribute('href');
+            smoothScroll(target, 1000); 
+          });
+        });
+      </script>
+</body>
+</html>
