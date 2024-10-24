@@ -1,0 +1,34 @@
+p {
+    
+}
+body {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#container-1 {
+    background-color: rgb(131, 131, 131);
+    height: 1000px; 
+    width: auto;
+}
+#container-2 {
+    background-color: aquamarine;
+    height: 1000px; 
+    width: auto;
+}
+#container-3 {
+    background-color: rgb(255, 170, 127);
+    height: 1000px; 
+    width: auto;
+}
+p, h1, h2, h3 {
+    color: rgb(154, 0, 0);
+}
+body.page-one {
+    background-color: #18181e; 
+}
+
+body.page-two #container {
+    background-color: coral; 
+    color: black; 
+}
