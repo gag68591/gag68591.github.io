@@ -32,3 +32,9 @@ body.page-two #container {
     background-color: coral; 
     color: black; 
 }
+.fira-sans-medium {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
