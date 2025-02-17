@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom - Explore</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+    body {
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    * {
+      font-family: "Inter", sans-serif;
+    }
+    .container {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+    header {
+      background-color: #000000;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 10%;
+    }
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #ffffff;
+    }
+    .search-section {
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    .search-section input {
+      width: 30%; 
+      padding: 10px;
+      font-size: 16px; 
+      border-radius: 30px;
+      
+    }
+    .designer-list {
+      margin-bottom: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+    .designer-item {
+      display: inline-block;
+      text-align: center;
+      margin-right: 20px;
+    }
+    .designer-photo {
+      width: 60px;
+      height: 60px;
+      background-color: #ccc;
+      border-radius: 50%;
+      margin-bottom: 5px;
+    }
+    .content {
+      display: flex;
+      gap: 20px;
+    }
+    .discover-section {
+      flex: 3;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      padding-left: -30px;
+      
+    }
+    .discover-item {
+      background-color: white;
+      padding: 10px;
+      height: 350px;
+      width: 360px;
+    }
+    .discover-photo {
+      height: 280px;
+      background-color: #ccc;
+      margin-bottom: 10px;
+    }
+    .stats {
+      font-size: 12px;
+      color: gray;
+    }
+
+    .button-group{
+        padding-top: 20px;
+    }
+  
+    #discover-heading{
+        padding-top: 50px;
+    }
+    .login_button {
+    padding: 9px 25px;
+    background-color: rgba(15,98,254,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 600;
+    }
+    .login_button:hover {
+      background-color: rgb(120, 146, 242,0.8);  
+    }
+    li, a, button {
+        font-family: "Inter", sans-serif;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    .logo {
+        cursor: pointer;
+    }
+    .nav_links {
+        list-style: none;
+    }
+    .nav_links li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+    .nav_links li a {
+        transition: all 0.3s ease 0s;
+    }
+    .nav_links li a:hover {
+        color: rgb(120, 146, 242);
+    }
+    #login {
+        padding: 9px 25px;
+        background-color: rgba(15,98,254,1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        font-weight: 600;
+    }
+    button:hover {
+    background-color: rgb(120, 146, 242,0.8);   
+    }
+    h1 {
+      font-size: 3.45rem;
+      margin: 0;
+      padding-top: 50px;
+    }
+    .hero_sub{
+      font-size: 20px;
+    }
+    .tags_active{
+      border: 1.5px solid black;
+      background-color: white;
+      color: #EB1EDA;
+      border-color: #EB1EDA;
+      padding: 3px 16px;
+      font-size: 12px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-right: 8px;
+    }
+    .tags_inactive{
+      border: 1.5px solid black;
+      background-color: white;
+      color: #000000;
+      border-color: #000000;
+      padding: 3px 16px;
+      font-size: 12px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-right: 8px;
+    }
+    .search{
+
+    }
+    nav {
+      
+    }
+    input::placeholder {
+    font-size: 14px;
+    color: gray; 
+    }
+    
+  </style>
+  
+  <body>
+    <div class="container">
+      <header>
+        <img class="logo" src="images/bloom.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#" class="active">Explore</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Communities</a></li>
+            </ul>
+        </nav>
+        <a class="signup" href="#"><button id="login">Login</button></a>
+    </header>
+  
+      <section class="search-section">
+        <h1>Get Inspired Today <br>with <span style="color: #0F62FE;">Bloom.</span></h1>
+        <p class="hero_sub">A website made for designers by designers</p>
+        <div class="search"><input type="text" placeholder="What are you looking for today?">
+        <img src="images/featured.png"
+        </div>
+
+  
+      <section class="designer-list">
+        <h2>Recommended Designers</h2>
+        <div class="designer-item">
+          <div class="designer-photo">
+            <img src="images/avatargirl1.png">
+          </div>
+          <p>Katie C.</p>
+        </div>
+        <div class="designer-item">
+          <div class="designer-photo">
+            <img src="images/avatarguy1.png">
+          </div>
+          <p>Ben F.</p>
+        </div>
+        <div class="designer-item">
+          <div class="designer-photo">
+            <img src="images/avatarguy2.png">
+          </div>
+          <p>Garrett G.</p>
+        </div>
+        <div class="designer-item">
+          <div class="designer-photo">
+            <img src="images/avatargirl1.png">
+          </div>
+          <p>Sadie B.</p>
+        </div>
+        <div class="designer-item">
+          <div class="designer-photo">
+            <img src="images/avatarguy1.png">
+          </div>
+          <p>Frank L.</p>
+        </div>
+      </section>
+  
+      <h2 id="discover-heading">Discover</h2>
+      <div class="button-group">
+        <button class="tags_active">Popular</button>
+        <button class="tags_inactive">New</button>
+        <button class="tags_inactive">Print Media</button>
+        <button class="tags_inactive">UI/UX</button>
+        <button class="tags_inactive">Illustration</button>
+      </div>
+    </section>
+
+      <div class="content">
+        <section class="discover-section">
+          <div class="discover-item">
+            <div class="discover-photo">
+              <img src="images/homepic1.png">
+            </div>
+            <p><strong>Katie C.</strong></p>
+            <p class="stats">stats</p>
+          </div>
+          <div class="discover-item">
+            <div class="discover-photo">
+              <img src="images/homepic2.png">
+            </div>
+            <p><strong>Ben F.</strong></p>
+            <p class="stats">stats</p>
+          </div>
+          <div class="discover-item">
+            <div class="discover-photo">
+              <img src="images/homepic3.png">
+            </div>
+            <p><strong>Garrett G.</strong></p>
+            <p class="stats">stats</p>
+          </div>
+          <div class="discover-item">
+            <div class="discover-photo"></div>
+            <p><strong>Katie C.</strong></p>
+            <p class="stats">stats</p>
+          </div>
+          <div class="discover-item">
+            <div class="discover-photo"></div>
+            <p><strong>Ben F.</strong></p>
+            <p class="stats">stats</p>
+          </div>
+          <div class="discover-item">
+            <div class="discover-photo"></div>
+            <p><strong>Garrett G.</strong></p>
+            <p class="stats">stats</p>
+          </div>
+          <div class="discover-item">
+            <div class="discover-photo"></div>
+            <p><strong>Katie C.</strong></p>
+            <p class="stats">stats</p>
+          </div>
+          <div class="discover-item">
+            <div class="discover-photo"></div>
+            <p><strong>Ben F.</strong></p>
+            <p class="stats">stats</p>
+          </div>
+          <div class="discover-item">
+            <div class="discover-photo"></div>
+            <p><strong>Garrett G.</strong></p>
+            <p class="stats">stats</p>
+          </div>
+        </section>
+  
+      </div>
+    </div>
+  </body>
+</html>

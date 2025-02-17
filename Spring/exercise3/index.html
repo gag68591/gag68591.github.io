@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+        *{
+            
+        }
+      input,
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input {
+        padding: 5px;
+        border-radius: 10px;
+      }
+      #output {
+        padding: 40px;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="myForm" onsubmit="return outputUserDetails()">
+      <label for="first_name">First Name:</label>
+
+      <input
+        id="first_Name"
+        type="text"
+        placeholder="Enter your name"
+        required
+      />
+
+      <label for="email">Email:</label>
+
+      <input
+        id="email"
+        type="email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <label for="Age">Your Age:</label>
+
+      <input
+        id="age"
+        type="number"
+        placeholder="Enter your Age"
+        required
+      />
+
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <div id="output"></div>
+
+    <script>
+      /**
+       * This writes the first name into the output box
+       **/
+      const outputUserDetails = () => {
+        // get first name submitted
+        const firstName = document.forms['myForm']['first_Name'].value;
+        const age = document.forms['myForm']['age'].value;
+        const email = document.forms['myForm']['email'].value;
+        // write to div
+        document.querySelector('#output').innerHTML = `<a href="mailto:${email}">${firstName}, ${age}</a>`;
+
+        // returns false to prevent from form submitting and page resetting
+        return false;
+      };
+    </script>
+  </body>
+</html>
